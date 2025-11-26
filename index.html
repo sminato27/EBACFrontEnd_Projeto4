@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Logan Fanpage</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body id="inicio">
+    <header class="header">
+        <div class="header__container container">
+            <div class="brand header__brand">
+                <span class="brand__logo" aria-hidden="true">LOGΛN</span>
+                <span class="brand__tagline">Um capítulo final</span>
+            </div>
+            <nav class="nav header__nav" aria-label="Navegação principal">
+                <button class="button button--ghost nav__item" data-scroll="#inicio">Início</button>
+                <button class="button button--ghost nav__item" data-scroll="#sobre">Sobre</button>
+                <button class="button button--ghost nav__item" data-scroll="#critica">Crítica</button>
+                <button class="button button--ghost nav__item" data-scroll="#onde-assistir">Onde Assistir</button>
+                <button class="button button--ghost nav__item" data-scroll="#faq">FAQ</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="hero" aria-label="Destaque">
+            <div class="hero__image " aria-hidden="true">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="./dist/images/logan-hero-mobile.jpg"/>
+                    <img src="./dist/images/logan-hero-wide.jpg" alt="Poster de Logan">
+                </picture>
+            </div>
+            <div class="hero__overlay">
+                <div class="hero__content container">
+                    <h1 class="hero__title">Logan</h1>
+                    <p class="hero__subtitle">O adeus visceral e humano de Wolverine nos cinemas.</p>
+                    <div class="hero__actions">
+                        <button class="button button--primary" data-scroll="#onde-assistir">Assistir agora</button>
+                        <button class="button button--secondary" data-scroll="#sobre">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section section--alt about" aria-labelledby="sobre-titulo">
+            <div class="container">
+                <h2 id="sobre-titulo" class="section__title">Sobre</h2>
+                <div class="about__grid">
+                    <div class="about__text">
+                        <p>
+                            Em um futuro próximo, um Logan exausto cuida do doente Professor X enquanto tenta esconder-se do mundo.
+                            Mas quando uma jovem mutante poderosa precisa de ajuda, ele é forçado a enfrentar sombras do passado.
+                        </p>
+                        <p>
+                            Dirigido por James Mangold, <strong>Logan</strong> reinventa o gênero de super-heróis com uma narrativa crua,
+                            emocional e focada em personagens — mais faroeste crepuscular do que espetáculo colorido.
+                        </p>
+                    </div>
+                    <ul class="about__list">
+                        <li class="about__item"><span class="about__label">Direção:</span> James Mangold</li>
+                        <li class="about__item"><span class="about__label">Elenco:</span> Hugh Jackman, Patrick Stewart, Dafne Keen</li>
+                        <li class="about__item"><span class="about__label">Duração:</span> 137 min</li>
+                        <li class="about__item"><span class="about__label">Gênero:</span> Ação, Drama, Ficção científica, Super-Herói</li>
+                        <li class="about__item"><span class="about__label">Classificação:</span> 16+</li>
+                    </ul>
+                    <div class="about__media" aria-hidden="true">
+                        <img src="./dist/images/loganEX23.jpg" alt="Logan e Laura (X-23) em cena do filme">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="critica" class="section reviews" aria-labelledby="critica-titulo">
+            <div class="container">
+                <h2 id="critica-titulo" class="section__title">Crítica</h2>
+                <div class="reviews__grid">
+                    <article class="card reviews__card">
+                        <div class="card__media" aria-hidden="true">
+                            <img src="./dist/images/logan-impactante.jpg" alt="Logan e Laura em cena triste">
+                        </div>
+                        <h3 class="card__title">Impactante e íntimo</h3>
+                        <p class="card__text">Hugh Jackman entrega sua performance definitiva como Wolverine em um filme maduro e profundamente emocional.</p>
+                    </article>
+                    <article class="card reviews__card">
+                        <div class="card__media" aria-hidden="true">
+                            <img src="./dist/images/logan-garras.jpg" alt="Logan em ação, com garras expostas">
+                        </div>
+                        <h3 class="card__title">Violência com propósito</h3>
+                        <p class="card__text">A ação é brutal, mas a brutalidade serve à história — um estudo de personagem sobre legado e redenção.</p>
+                    </article>
+                    <article class="card reviews__card">
+                        <div class="card__media" aria-hidden="true">
+                            <img src="./dist/images/logan-landscape.jpeg" alt="Paisagem de deserto, clima de faroeste moderno">
+                        </div>
+                        <h3 class="card__title">Um faroeste moderno</h3>
+                        <p class="card__text">Mais próximo de um western crepuscular do que de um filme de herói tradicional — e isso é um elogio.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="onde-assistir" class="section watch" aria-labelledby="onde-assistir-titulo">
+            <div class="container">
+                <h2 id="onde-assistir-titulo" class="section__title">Onde Assistir</h2>
+                <div class="watch__providers">
+                    <div class="provider watch__provider">
+                        <div class="provider__info">
+                            <img class="provider__logo" src="./dist/images/Star+_logo.png" alt="Logo Star+">
+                            <h3 class="provider__name">Star+</h3>
+                            <p class="provider__note">Assinatura</p>
+                        </div>
+                        <a class="button button--primary provider__cta" href="https://www.starplus.com/" target="_blank" rel="noopener noreferrer">Ver no Star+</a>
+                    </div>
+                    <div class="provider watch__provider">
+                        <div class="provider__info">
+                            <img class="provider__logo" src="./dist/images/Amazon_Prime_Video_logo.png" alt="Logo Prime Video">
+                            <h3 class="provider__name">Prime Video</h3>
+                            <p class="provider__note">Aluguel/Compra</p>
+                        </div>
+                        <a class="button button--secondary provider__cta" href="https://www.primevideo.com/" target="_blank" rel="noopener noreferrer">Ver no Prime</a>
+                    </div>
+                </div>
+                <p class="watch__disclaimer">Disponibilidade pode variar por região e data.</p>
+            </div>
+        </section>
+
+        <section id="faq" class="section faq section--alt" aria-labelledby="faq-titulo">
+            <div class="container">
+                <h2 id="faq-titulo" class="section__title">FAQ</h2>
+                <div class="faq__list">
+                    <details class="faq__item">
+                        <summary class="faq__question">Preciso assistir a todos os filmes X-Men antes de Logan?</summary>
+                        <p class="faq__answer">Não. Ajuda conhecer o personagem, mas o filme funciona sozinho como drama de despedida.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">O filme é violento?</summary>
+                        <p class="faq__answer">Sim. Logan é classificado para maiores e apresenta violência explícita justificada pela narrativa.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">Há cena pós-créditos?</summary>
+                        <p class="faq__answer">Não. Diferente de outros filmes de herói, Logan não possui cena pós-créditos.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__text">Página Fanmade feita para fins educacionais.</p>
+        </div>
+    </footer>
+
+    <script src="./dist/js/index.js" defer></script>
+</body>
+</html>

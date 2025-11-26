@@ -1,0 +1,44 @@
+@use 'tokens';
+
+.provider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  background: tokens.$color-surface-alt;
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: tokens.$radius;
+  box-shadow: tokens.$shadow;
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__logo {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    filter: saturate(.95) contrast(1.1);
+  }
+
+  &__name { margin: 0 0 4px; }
+  &__note { margin: 0; color: tokens.$color-text-dim; font-size: 14px; }
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+
+    &__info {
+      justify-content: center;
+    }
+    &__logo {
+      width: 44px; height: 44px;
+    }
+    &__name { font-size: 18px; }
+    .provider__cta { width: 100%; }
+  }
+}

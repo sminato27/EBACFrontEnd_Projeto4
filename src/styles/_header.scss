@@ -1,0 +1,48 @@
+@use 'tokens';
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(13,13,13,.8);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 64px;
+    gap: 16px;
+    @media (max-width: 700px) {
+      flex-wrap: wrap;
+      padding-block: 8px;
+    }
+  }
+
+  // No mobile, ocultar completamente o header
+  @media (max-width: 700px) {
+    display: none;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  &__logo { font-weight: 800; letter-spacing: 2px; font-size: 20px; }
+  &__tagline { color: tokens.$color-text-dim; font-size: 13px; }
+  @media (max-width: 480px) {
+    gap: 8px;
+    &__logo { font-size: 18px; letter-spacing: 1.5px; }
+    &__tagline { display: none; }
+  }
+}
+
+.nav {
+  display: flex; gap: 8px; flex-wrap: wrap;
+  @media (max-width: 700px) {
+    width: 100%;
+    justify-content: center;
+  }
+}

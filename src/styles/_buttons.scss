@@ -1,0 +1,64 @@
+@use 'tokens';
+
+.button {
+  --bg: transparent;
+  --fg: #{tokens.$color-text};
+  --bd: rgba(255,255,255,.15);
+  width: auto;
+  flex-shrink: 0;
+  text-align: center;
+  appearance: none;
+  border: 1px solid var(--bd);
+  background: var(--bg);
+  color: var(--fg);
+  padding: 10px 16px;
+  min-height: 44px; // target de toque adequado em mobile
+  border-radius: tokens.$radius;
+  cursor: pointer;
+  transition: transform .06s ease, background .2s ease, border-color .2s ease, color .2s ease, box-shadow .2s ease, filter .2s ease;
+  font-weight: 600;
+  line-height: 1.2;
+  &:hover { transform: translateY(-1px); }
+  &:active { transform: translateY(0); }
+  &:focus-visible {
+    outline: 2px solid rgba(tokens.$color-primary, .85);
+    outline-offset: 2px;
+  }
+
+  &--primary {
+    --bg: #{tokens.$color-primary};
+    --fg: #000;
+    --bd: transparent;
+    box-shadow: 0 6px 16px rgba(tokens.$color-primary-contrast, .6);
+
+    &:hover { filter: brightness(1.05); }
+  }
+
+  &--secondary {
+    --bg: #202020;
+    --fg: #{tokens.$color-text};
+    --bd: #2c2c2c;
+    &:hover { background: #292929; }
+  }
+
+  &--ghost {
+    --bg: transparent;
+    --fg: #{tokens.$color-text};
+    --bd: rgba(255,255,255,.12);
+    &:hover { background: rgba(255,255,255,.06); }
+  }
+
+  &--accent {
+    --bg: #{tokens.$color-accent};
+    --fg: #fff;
+    --bd: transparent;
+    box-shadow: 0 6px 16px rgba(0,0,0,.45);
+    &:hover { filter: brightness(1.06); }
+  }
+}
+
+// Ajustes de botões em containers específicos no mobile
+@media (max-width: 700px) {
+  .hero__actions .button { width: 100%; }
+  .nav .button { padding: 8px 12px; }
+}

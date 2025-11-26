@@ -1,0 +1,20 @@
+@use 'tokens';
+
+.card {
+  background: tokens.$color-surface-alt;
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: tokens.$radius;
+  padding: 16px;
+  box-shadow: tokens.$shadow;
+
+  &__media {
+    margin: -16px -16px 12px;
+    overflow: hidden;
+    border-top-left-radius: tokens.$radius;
+    border-top-right-radius: tokens.$radius;
+    img { display: block; width: 100%; height: 160px; object-fit: cover; }
+  }
+
+  &__title { margin: 0 0 8px; font-size: 18px; }
+  &__text { margin: 0; color: tokens.$color-text-dim; }
+}

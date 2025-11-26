@@ -1,0 +1,22 @@
+@use 'tokens';
+
+.faq {
+  &__list { display: grid; gap: 12px; }
+
+  &__item {
+    background: tokens.$color-surface-alt;
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: tokens.$radius;
+    overflow: hidden;
+
+    summary {
+      cursor: pointer;
+      padding: 14px 16px;
+      list-style: none;
+      font-weight: 600;
+      &:focus-visible { outline: 2px solid rgba(tokens.$color-primary, .85); outline-offset: 2px; }
+    }
+
+    p { padding: 0 16px 16px; margin: 0; color: tokens.$color-text-dim; }
+  }
+}

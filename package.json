@@ -1,0 +1,29 @@
+{
+  "name": "ebacfrontend_projeto4",
+  "version": "1.0.0",
+  "main": "src/scripts/index.js",
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sminato27/EBACFrontEnd_Projeto4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sminato27/EBACFrontEnd_Projeto4/issues"
+  },
+  "homepage": "https://github.com/sminato27/EBACFrontEnd_Projeto4#readme",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.94.2"
+  }
+}
